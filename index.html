@@ -2,79 +2,273 @@
 <html>
 <head>
 	<title> Muhammad Rifki </title>
-	<!-- Main Style -->
+	<!-- Main CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- Main Js -->
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- Google Font Roboto Mono -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
 </head>
 <body>
-	<nav>
-		<img id = "navbar_logo" src="img/muri.png">
-		<ul>
-			<li>HOME</li>
-			<li>|</li>
-			<li><a href="About us.html">CONTACT</a></li>
-			<li>|</li>
-			<li><a href="contact.html">ABOUT ME</a></li>
-		</ul>
-	</nav>
+	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-color">
 
-	<div class="kosongan"></div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-	<section id="info_utama" class="section">
-		<div id = "identitas">
-		<h2>
-			Hello!
-		</h2>
-		<h3>
-			Saya Muhammad Rifki
-		</h3>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-		<p>Saya adalah seorang mahasiswa Teknologi Rekayasa Perangkat Lunak kelas B
-		yang sedang menempuh studi di Sekolah Vokasi UGM. Saat ini, saya sedang 
-		belajar Pemrograman Web 1 dan ini merupakan salah satu tugas yang diberikan.
-		Dosen yang mengampu mata kuliah Pemrograman Web 1 ini adalah pak Abdur.
-		Web ini dibuat dengan menggunakan HTML dan CSS dengan menerapkan prinsip
-		class, id, dan external style CSS.
-		</p>
+			<!-- mr-auto = margin-right-->
+			<!-- ml-auto = margin-left-->
+			<ul class="navbar-nav mr-0 font-size">
 
-		<button class="contact_me"><a href="contact.html">Contact Me</a></button>
+				<li class="nav-item mr-3">
+					<a class="nav-link text-light" href="index.html">Home<span class="sr-only">(current)</span></a>
+				</li>
+
+				<li class="nav-item mr-3">
+					<a class="nav-link text-light" href="contact.html">Contact</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link text-light" href="About us.html">About</a>
+				</li>
+
+			</ul>
+		</div>
+		<a class="navbar-brand" style="margin-right: 635px;" href="index.html">
+			<img src="img/muri.png" width = "48" height="40"></a>
+		</nav>
+
+
+		<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+				<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active">
+					<img src="img/carousel1.jpg" class="d-block w-100">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Hello !</h5>
+						<p>Welcome to my website.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/carousel2.jpg" class="d-block w-100">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Chill !</h5>
+						<p>Enjoy your time here.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/carousel3.jpg" class="d-block w-100">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Hey !</h5>
+						<p>Wish you happy there.</p>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col mt-5">
+					<h3 class="text-black-50">
+						Hello!
+					</h3>
+					<h2 class="text-dark">
+						Saya Muhammad Rifki
+					</h2>
+
+					<p class="lead">Saya adalah seorang mahasiswa Teknologi Rekayasa Perangkat Lunak kelas B
+						yang sedang menempuh studi di Sekolah Vokasi UGM. Saat ini, saya sedang 
+						belajar Pemrograman Web 1 dan ini merupakan salah satu tugas yang diberikan.
+						Dosen yang mengampu mata kuliah Pemrograman Web 1 ini adalah pak Abdur.
+						Web ini dibuat dengan menggunakan HTML dan CSS dengan menerapkan prinsip
+						class, id, dan external style CSS.
+					</p>
+
+					<button class="btn btn-outline-dark">Contact Me</button>
+				</div>
+
+				<div class="col" id="position-profil">
+					<img src="img/profil.jpg" width="500" height="430">
+				</div>
+			</div>
 
 		</div>
-		
 
-		<div id="images">
-			<img src="img/lorem.jpg">
+		<div class="container margin-container">
+			<div class="row">
+				<div class="col">
+					<hr id="skill-left">
+				</div>
+				<div class="col mx-0">
+					<h3 class="text-black center">SKILLS</h3>
+					<h6 class="text-black-50 center">I can do...</h6>
+				</div>
+				<div class="col">
+					<hr id="skill-right">
+				</div>
+			</div>
+			<div class="row justify-content-around mt-5">
+				<div class="col pl-5">
+					<img style="margin-left: 190px;" src="img/android.png" width="100" height="100">
+					<h5 class="mt-3 center">Android Programming</h5>
+				</div>
+				<div class="col pl-5">
+					<img src="img/web.png" style="margin-left: 200px;" width="100" height="100">
+					<h5 class="mt-3 center">Web Programming</h5>
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col" >
+					<img style="margin-left: 500px;" src="img/cloud.png" width="100" height="100">
+					<h5 class="center">Cloud Computing</h5>
+				</div>
+			</div>
 		</div>
 
-	</section>
+		<div class="container margin-container">
+			<div class="row">
+				<div class="col">
+					<hr id="skill-left">
+				</div>
+				<div class="col mx-0">
+					<h3 class="text-black center">Hobbies</h3>
+					<h6 class="text-black-50 center">I like...</h6>
+				</div>
+				<div class="col">
+					<hr id="skill-right">
+				</div>
+			</div>	
 
-	<br>
-	<br>
-
-	<h4 align="center" style="font-size: 28px;">KEAHLIAN</h4>
-
-	<section id="info_lanjutan" class="section">
-
-		<div id="konten1">
-			<img src="img/html.png">
-			<h2>HTML</h2>
+			<div class="card-deck mt-5">
+				<div class="card">
+					<img src="img/Game.png" class="card-img-top my-5 " style="width: 150px; height: 150px; margin-left: 100px;" alt="Game">
+					<div class="card-body">
+						<h5 class="card-title">Playing Games</h5>
+						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<button class="btn btn-outline-dark">Read More...</button>
+					</div>
+				</div>
+				<div class="card">
+					<img src="img/soccer.png" class="card-img-top my-5 " style="width: 150px; height: 150px; margin-left: 100px;" alt="Soccer">
+					<div class="card-body">
+						<h5 class="card-title">Playing Soccer</h5>
+						<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+						<button class="btn btn-outline-dark">Read More...</button>
+					</div>
+				</div>
+				<div class="card">
+					<img src="img/cinema.png" class="card-img-top my-5 " style="width: 150px; height: 150px; margin-left: 100px;" alt="Movie">
+					<div class="card-body">
+						<h5 class="card-title">Watching Movie</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+						<button class="btn btn-outline-dark">Read More...</button>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div id="konten2">
-			<img src="img/css.png">
-			<h2>CSS</h2>
-		</div>
-		<div id="konten3">
-			<img src="img/js.png">
-			<h2>JavaScript</h2>
-		</div>
 
-	</section>
 
-	<div class="footer">
-		Copyright &copy; 2020, Muri. All Right Reserved
-	</div>
-</body>
-</html>
+		<div class="card margin-container text-light" style="background-image: url(img/footer.jpeg);">
+			<div class="card-footer">
+
+				<div class="container mt-5">
+					<div class="row">
+						<div class="col">
+							<h5 class="card-title">Menu</h5>
+						</div>
+
+						<div class="col">
+							<h5 class="card-title">Find Me</h5>
+						</div>
+
+						<div class="col">
+							<h5 class="card-title">Follow Me</h5>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<p class="card-text"><a class="nav-link text-light" href="index.html">Home</a></p>
+						</div>
+
+						<div class="col">
+							<p class="card-text ml-4"><img src="img/address.svg" width="35">Blimbingsari C No.68J</p>
+						</div>
+
+						<div class="col">
+							<p class="card-text ml-4"><img src="img/ig.png" width="35"></p>
+						</div>
+					</div>
+
+
+					<div class="row">
+						<div class="col">
+							<p class="card-text"><a class="nav-link text-light" href="contact.html">Contact</a></p>
+						</div>
+
+						<div class="col">
+							<p class="card-text ml-4"><img src="img/mail.svg" width="35">muri.rifki27@gmail.com</p>
+						</div>
+
+						<div class="col">
+							<p class="card-text ml-4"><img src="img/github.png" width="35"></p>
+						</div>
+					</div>
+
+
+					<div class="row">
+						<div class="col">
+							<p class="card-text"><a class="nav-link text-light" href="About us.html">About</a></p>
+						</div>
+
+						<div class="col">
+							<p class="card-text ml-4"><img src="img/phone.svg" width="35">+6282144779709</p>
+						</div>
+
+						<div class="col">
+							<p class="card-text ml-4"><img src="img/wa.png" width="35"></p>
+						</div>
+					</div>
+
+					<div class="row mt-5">
+						<div class="col">
+							<blockquote class="blockquote text-center">
+								<p class="mb-0">Life is drama. We're actor and god is the director</p>
+								<footer class="blockquote-footer"><cite title="Source Title">Muri</cite></footer>
+							</blockquote>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<p class="text-center">Copyright &copy; 2020 muri27.github.io</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- jQuery first, then Bootstrap JS. -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+			<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+
+
+		</body>
+		</html>
